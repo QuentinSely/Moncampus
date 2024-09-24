@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap");
+
+$font: "Montserrat";
+
+$black: #000000;
+$light-gray: #eeeff3;
+$dark-violet: #271549;
+$bright-yellow: #fad053;
+$cyan-blue: #37b7d5;
+$violet: #935b9e;
+$rose-red: #da4759;
+$cyan-gray: #abb8c3;
+$white: #ffffff;
+$pale-pink: #f78da7;
+$bright-red: #cf2e2e;
+$bright-orange: #ff6900;
+$bright-amber: #fcb900;
+$mint-green: #7bdcb5;
+$cyan-green: #00d084;
+$light-cyan: #8ed1fc;
+$bright-cyan: #0693e3;
+$bright-violet: #9b51e0;
+
+* {
+  font-family: $font;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: $white;
+  color: $black;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: $font;
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin space {
+  display: flex;
+  justify-content: space-between;
+}
+
+// padding margin
+
+@mixin padding2 {
+  padding: 2rem;
+}
+
+@mixin padding2top {
+  padding: 2rem 0;
+}
+
+@mixin config {
+  padding: 0 2rem 2rem;
+}
+
+@mixin margin2 {
+  margin: 2rem;
+}
+
+@mixin margin2top {
+  margin: 2rem 0;
+}
+
+// shadow
+@mixin borderShadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

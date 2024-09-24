@@ -1,0 +1,29 @@
+
+.covoiturage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.voiture1 {
+    position: relative;
+    width: fit-content;
+    width: 60px;
+    height: 60px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        z-index: 0;
+    }
+}
+
